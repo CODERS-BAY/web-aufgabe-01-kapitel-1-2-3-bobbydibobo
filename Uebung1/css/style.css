@@ -39,18 +39,24 @@ nav ul li {
     opacity: 1;
 }
 
+nav ul a{
+    text-decoration: none;
+}
+
 nav ul li:hover{
     opacity: 1;
 }
 
 #selected {
     opacity: 1;
+    background-color: rgb(80, 78, 78);
 }
 
 main {
     display: flex;
     justify-content: space-between;
     padding: 3rem 1rem;
+    margin-bottom: 5%;
 }
 
 main h2 {
@@ -86,35 +92,48 @@ footer h2 {
 padding: 1rem 0rem;
 }
 
-.about i {
+.social-media {
+    background-color: rgb(58, 56, 56) ;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 10rem;
+}
+
+.social-media i {
     color: white;
     padding: 1rem 1rem;
     margin: 0rem .3rem;
-    margin-top: 10rem;
+    margin-bottom: 3rem;
     opacity: .8;
     font-size: 1.6rem;
     border: 1px solid white;
     border-radius: 10px;
+    
 }
 
 i:hover{
     opacity: 1;
 }
 
-.links-list{
+.menu ul{
     list-style: none;
     color: white;
     font-size: 1.4rem;
-    opacity: .8;
 }
 
-.links-list li {
+.menu ul li {
     color: white;
     text-decoration: none;
     padding: .6rem 0rem;
+    opacity: .8;
 }
 
-.links-list li:hover{
+.menu ul a{
+    text-decoration: none;
+}
+
+.menu ul li:hover{
    opacity: 1;
 }
 
@@ -176,10 +195,104 @@ i:hover{
     opacity: 1;
 }
 
-@media screen and (max-width: 992px) {
+.animation img{
+    width: 50px;
+    animation: dickbutt 3s linear infinite;
+    position: relative;
+    bottom: -500px;
+}
+
+.animation{
+    width: 100%;
+    height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;;
+    bottom: 50px;
+    overflow: hidden;
+
+}
+
+.animation img:nth-child(1){
+    width: 55px;
+    animation-delay: 2s;
+}
+.animation img:nth-child(2){
+    width: 35px;
+    animation-delay: 1s;
+}
+.animation img:nth-child(3){
+    width: 40px;
+    animation-delay: 3s;
+}
+.animation img:nth-child(4){
+    width: 75px;
+    animation-delay: 2.5s;
+}
+.animation img:nth-child(5){
+    width: 25px;
+    animation-delay: 4s;
+}
+.animation img:nth-child(6){
+    width: 45px;
+    animation-delay: 1.5s;
+}
+.animation img:nth-child(7){
+    width: 40px;
+    animation-delay: 3.5s;
+}
+.animation img:nth-child(8){
+    width: 30px;
+    animation-delay: 0.5s;
+}
+.animation img:nth-child(9){
+    width: 50px;
+    animation-delay: 2s;
+}
+.animation img:nth-child(10){
+    width: 90px;
+    animation-delay: 1s;
+}
+
+.bodyTwo {
+    height: 60vh;
+}
+ 
+
+@media screen and (max-width: 892px) {
     main{
         display: block;
     }
+
+    .menu h2{
+        font-size: 1.5rem;
+        padding-left: 3rem;
 }
 
+    .menu ul {
+        padding-left: 3rem;
+        font-size: 1rem;
+    }
 
+
+}
+
+@keyframes dickbutt{
+    0%{
+        transform: translateY(0vh);
+        opacity: .0;
+    }
+    50%{
+        opacity: .5;
+    }
+    70%{
+        opacity: .75;
+    }
+    100%{
+        transform: translateY(-115vh);
+        opacity: 0;
+    }
+}
+
+}
